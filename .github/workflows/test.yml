@@ -25,6 +25,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo test > TEST.md
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git add TEST.md
           git commit -m "Test commit"
           git push
